@@ -40,6 +40,20 @@ public class NewSchoolOfLearning {
 	public void setmarksInMathematics(int mathematics) {
 		this.marksInmathematics = mathematics;
 	}
+
+	@Override
+	public String toString() {
+		return "NewSchoolOfLearning [studentName=" + studentName + ", marksInphysics=" + marksInphysics
+				+ ", marksInchemistry=" + marksInchemistry + ", marksInmathematics=" + marksInmathematics + "totalMarks ="+gettotalMarks()+"getPercentage ="+getPercentage()+ "]";
+	}
+	public int gettotalMarks() {
+		return marksInphysics + marksInchemistry + marksInmathematics ;
+	}
 	
+	public double getPercentage() {
+        int totalMarks = gettotalMarks();
+        int maximumMarks = 150;
+        return (totalMarks / (double) maximumMarks) * 100;
+    }
 	
 }
