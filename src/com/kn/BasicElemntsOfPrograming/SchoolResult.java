@@ -34,8 +34,8 @@ public class SchoolResult {
 		}
 		if(f == false) {
 			System.out.println("Not found");
-			
-		}i++;
+		}
+		i++;
 		}
 		
 		
