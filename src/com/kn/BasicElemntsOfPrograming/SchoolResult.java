@@ -38,24 +38,12 @@ public class SchoolResult {
 		i++;
 		}
 		
-		
-		
-		
-		
 	}
-		
-		
-		
+			
 	 static	void display(NewSchoolOfLearning result) {
 		 System.out.println("Name "+" Physics " +"Chemistry "+"Mathematics "+ "Total_Marks " +"%"+"\n");
 			System.out.println(result.studentName + " "+ result.getMarksInphysics()+"      "+
 		result.getmarksInChemistry()+"       "+result.getmarksInMathematics()+"           "+result.gettotalMarks()+"        "
 		+result.getPercentage());
 		}
-		
-		
-		
-		
-	
-
 }
